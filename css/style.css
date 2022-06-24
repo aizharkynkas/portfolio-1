@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 855px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
