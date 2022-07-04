@@ -5,170 +5,187 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <nav class="header-nav">
-          <ul class="header-menu">
-            <li class="header-menu-item">
-              <a href="#" class="header-menu-link" target="_blank">Works</a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link" target="_blank">Works</a>
             </li>
-            <li class="header-menu-item">
-              <a href="#" class="header-menu-link" target="_blank">Blog</a>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link" target="_blank">Blog</a>
             </li>
-            <li class="header-menu-item">
-              <a href="#" class="header-menu-link" target="_blank">Contact</a>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link" target="_blank">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main">
-      <div class="container">
-        <section class="intro">
-          <div class="section-col">
-            <h1 class="intro-position">
-              Hi, I am John, <br />
-              Creative Technologist
+      <section class="about">
+        <div class="container about__container">
+          <div class="about__left">
+            <h1 class="about__title">
+              Hi, I am John,<span class="about__position"
+                >Creative Technologist</span
+              >
             </h1>
-            <p class="intro-description">
+            <p class="about__description">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <a href="index.html" class="intro-link" download>Download Resume</a>
+            <a class="btn" href="#" download>Download Resume</a>
           </div>
-          <div class="section-col intro-img">
-            <img
-              src="img/photo.png"
-              alt="Photo"
-              class="intro-img"
-              width="243"
-              height="243"
-            />
-          </div>
-        </section>
-      </div>
-      <section class="posts">
-        <div class="container">
-          <h2 class="section-title posts-title">Recent posts</h2>
-          <a href="#" class="posts-link" target="_blank">View all</a>
-          <div class="posts-list-item">
-            <h3 class="posts-list-item-title">
-              Making a design system from scratch
-            </h3>
-            <p class="posts-list-item-details">
-              <span class="posts-list-item-time">12 Feb 2020</span>
-              <span class="posts-list-item-category">Design, Pattern</span>
-            </p>
-            <p class="posts-list-item-excerpt">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </div>
-          <div class="posts-list-item">
-            <h3 class="posts-list-item-title">
-              Creating pixel perfect icons in Figma
-            </h3>
-            <p class="posts-list-item-details">
-              <span class="posts-list-item-time">12 Feb 2020</span>
-              <span class="posts-list-item-category">Figma, Icon Design</span>
-            </p>
-            <p class="posts-list-item-excerpt">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
+          <div class="about__right">
+            <img src="img/photo.png" alt="Photo" class="about-img" />
           </div>
         </div>
       </section>
-      <div class="container">
-        <section class="works-section">
-          <h2 class="section-title works-title">Featured works</h2>
-          <ul class="works-list">
-            <li class="works-item">
-              <div class="works-col works-img">
-                <img
-                  src="img/dashboard.png"
-                  alt="Dashboard"
-                  class="dashboard-img"
-                  width="246"
-                  height="180"
-                />
+      <section class="posts">
+        <div class="container">
+          <div class="posts__top">
+            <h2 class="title">Recent posts</h2>
+            <a href="#" class="posts__view-all-link">View all</a>
+          </div>
+          <ul class="posts__list">
+            <li class="posts__list-item">
+              <h3 class="posts__item-title">
+                <a class="posts__item-link" href="#">
+                  Making a design system from scratch</a
+                >
+              </h3>
+              <div class="posts__details">
+                <time class="posts__details-time" datetime="2020-02-12"
+                  >12 Feb 2020</time
+                >
+                <ul class="posts__detail-cat">
+                  <li class="posts__detail-cat-item">Design</li>
+                  <li class="posts__detail-cat-item">Pattern</li>
+                </ul>
               </div>
-              <div class="works-col works-description">
-                <h3 class="works-title">
-                  <a href="#">Designing Dashboards</a>
-                </h3>
-                <p class="works-item-details">
-                  <span class="year">2020</span>
-                  <a href="#" class="category">Dashboard</a>
-                </p>
-                <p class="works-text dashboard-text">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
-                </p>
-              </div>
+              <p class="posts__item-excerpt">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
             </li>
-            <li>
-              <div class="works-col works-img">
-                <img
-                  src="img/illustration.png"
-                  alt="illustration"
-                  class="works-img"
-                  width="246"
-                  height="180"
-                />
+            <li class="posts__list-item">
+              <h3 class="posts__item-title">
+                <a class="posts__item-link" href="#">
+                  Creating pixel perfect icons in Figma</a
+                >
+              </h3>
+              <div class="posts__details">
+                <time class="posts__details-time" datetime="2020-02-12"
+                  >12 Feb 2020</time
+                >
+                <ul class="posts__detail-cat">
+                  <li class="posts__detail-cat-item">Figma</li>
+                  <li class="posts__detail-cat-item">Icon Design</li>
+                </ul>
               </div>
-              <div class="works-col works-description">
-                <h3 class="works-title">Vibrant Portraits of 2020</h3>
-                <p class="works-item-details">
-                  <span class="works-span">2018</span>
-                  <span class="works-span">Illustration</span>
-                </p>
-                <p class="works-text">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="works-col works-img">
-                <img
-                  src="img/typography.png"
-                  alt="typography"
-                  class="works-img"
-                  width="246"
-                  height="184"
-                />
-              </div>
-              <div class="works-col works-descriptio">
-                <h3 class="works-div-title">36 Days of Malayalam type</h3>
-                <p class="works-item-details">
-                  <span class="works-span">2018</span>
-                  <span class="works-span">Typography</span>
-                </p>
-                <p class="works-text">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
-                </p>
-              </div>
+              <p class="posts__item-excerpt">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <section class="works">
+        <div class="container">
+          <h2 class="title works-title">Featured works</h2>
+          <div class="works__item">
+            <img
+              src="img/dashboard.png"
+              alt="Featured"
+              class="works__img"
+              width="246"
+              height="180"
+            />
+            <div class="works__text">
+              <h3 class="works__item-title">Designing Dashboards</h3>
+
+              <p class="works__item-details">
+                <span class="works__item-year">2020</span>
+                <span class="works__item-cat">Dashboard</span>
+              </p>
+              <p class="works__item-txt">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+
+          <div class="works__item">
+            <img
+              src="img/illustration.png"
+              alt="Featured"
+              class="works__img"
+              width="246"
+              height="180"
+            />
+            <div class="works__text">
+              <h3 class="works__item-title">Vibrant Portraits of 2020</h3>
+
+              <p class="works__item-details">
+                <span class="works__item-year">2018</span>
+                <span class="works__item-cat">Illustration</span>
+              </p>
+              <p class="works__item-txt">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+
+          <div class="works__item">
+            <img
+              src="img/typography.png"
+              alt="Featured"
+              class="works__img"
+              width="246"
+              height="180"
+            />
+            <div class="works__text">
+              <h3 class="works__item-title">36 Days of Malayalam type</h3>
+
+              <p class="works__item-details">
+                <span class="works__item-year">2018</span>
+                <span class="works__item-cat">Typography</span>
+              </p>
+              <p class="works__item-txt">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <div class="container">
-      <footer class="footer">
+
+    <footer class="footer">
+      <div class="container">
         <ul class="socials">
-          <li class="socials-item">
-            <a href="#" class="socials-item-link socials-item-link-fb">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link-fb">
               <svg
                 width="30"
                 height="30"
@@ -183,8 +200,8 @@
               </svg>
             </a>
           </li>
-          <li class="socials-item">
-            <a href="#" class="socials-item-link socials-item-link-insta">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link-insta">
               <svg
                 width="30"
                 height="30"
@@ -207,8 +224,8 @@
               </svg>
             </a>
           </li>
-          <li class="socials-item">
-            <a href="#" class="socials-item-link socials-item-link-twitter">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link-twitter">
               <svg
                 width="37"
                 height="30"
@@ -224,7 +241,7 @@
             </a>
           </li>
           <li class="socials-item">
-            <a href="#" class="socials-item-link socials-item-link-linkedin">
+            <a href="#" class="socials__link socials__link-linkedin">
               <svg
                 width="30"
                 height="30"
@@ -240,8 +257,10 @@
             </a>
           </li>
         </ul>
-        <p class="footer-copyright">Copyright &copy;2020 All rights reserved</p>
-      </footer>
-    </div>
+        <p class="footer__copyright">
+          Copyright &copy;2020 All rights reserved
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
